@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to CustomerFrontend.html</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="formChecker.js">
+
+    </script>
+  </head>
+  <body>
+    <div class="title">
+      <h2 id="mainTitle">This is my shop. Buy something or get out.</h2>
+      <p id="subTitle">No, really.</p>
+      <div class="formDiv">
+        <form class="" action="customerBackend.php" method="post">
+          <div class="usernameEmail">
+            <label>Email:</label>
+            <input type="email" name="" value="" required>
+            <label>Password:</label>
+            <input type="password" name="pass" value="" required>
+          </div>
+
+          <div class="buttonArea">
+            <button type="reset" name="reset">Reset</button>
+            <button type="submit" name="submit" onmouseover="checkRadio();checkQuan();">Submit</button>
+          </div>
+
+
+          <div class="shipppingButtons">
+            <p><u>Shipping options.</u></p>
+            <input type="radio" name="sh" value="50" id="b1">
+            <label>Overnight - $50.00</label><br>
+            <input type="radio" name="sh" value="5" id="b2">
+            <label>Three day - $5.00</label><br>
+            <input type="radio" name="sh" value="0" id="b3">
+            <label>Free 7 day</label><br>
+
+          </div>
+
+
+      </div>
+
+        <div class="items">
+          <br><br><br>
+          <label>Quantity:</label><input type="number" name="q[]" value="0" id="field1" min="0">
+          <p>My grandma's old used crocs - $50</p>
+          <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/02/18/56c6636068027887fd00272c/m_56c6636068027887fd00272d.jpg" alt="crocs" width=200px height=200px>
+          <br><br><br><br><br>
+          <label>Quantity:</label><input type="number" name="q[]" value="0" id="field2" min="0">
+          <p>Bed - $100</p>
+          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/02690/061013STEFirstpers_2690116c.jpg" alt="bed" width=200px height=200px>
+          <br><br><br><br><br>
+          <label>Quantity:</label><input type="number" name="q[]" value="0" id="field3" min="0">
+          <p>My dead grandpa's old rowing boat that Captain Sully landed the US Airways Flight 1549 on top of in the middle of the Hudson River - $36</p>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/9184-oOFrgL._SL1500_.jpg" alt="sulli" width=200px height=200px>
+
+
+        </div>
+
+      </form>
+
+    </div>
+  </body>
+</html>

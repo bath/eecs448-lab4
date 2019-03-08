@@ -1,0 +1,59 @@
+<?php include 'myfirstprogram.php';?>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 2 448 Lab 4</title>
+  </head>
+  <body>
+    <h1>Quiz of over the International Space Station.</h1>
+    <p>Hopefully you paid attention in class. If you do not get a 3/5 you will be slain in the name of Chris Hadfield.</p>
+    <img src="https://www.speakers.ca/wp-content/uploads/2013/07/Chris_Hadfield-Nov2016-1-760x427.jpg" alt="Baby Hadfield" width="300px" height="200px"> <br><br><br><br>
+
+    <form action="quizHandle.php" method="post">
+
+      <p>How many astronauts have died in space?</p>
+      <input type="radio" name="q1a1" value=""> <label for="q1a1" name="ans1">All major governments have not released the actual number of astronauts that have died in space, with the USSR/Russians losing many cosmonauts they have not yet admitted.</label><br>
+      <input type="radio" name="q1a2" value=""> <label for="q1a2">4.</label><br>
+      <input type="radio" name="q1a3" value=""> <label for="q1a3">18.</label><br>
+      <input type="radio" name="q1a4" value=""> <label for="q1a4">We didn't go to space.</label><br>
+
+      <p>Is Chris Hadfield cool?</p>
+      <input type="radio" name="q2a1" value=""> <label for="q2a1">I guess.</label><br>
+      <input type="radio" name="q2a2" value=""> <label for="q2a2">Yeah.</label><br>
+      <input type="radio" name="q2a3" value=""> <label for="q2a3">I like his comedy specials.</label><br>
+      <input type="radio" name="q2a4" value=""> <label for="q2a4">We didn't go to space.</label><br>
+
+      <p>What is the velocity of the International Space Station?</p>
+      <input type="radio" name="q3a1" value=""> <label for="q3a1">Pretty fast.</label><br>
+      <input type="radio" name="q3a2" value=""> <label for="q3a2">4.77 miles/s.</label><br>
+      <input type="radio" name="q3a3" value=""> <label for="q3a3">4.76 miles/s.</label><br>
+      <input type="radio" name="q3a4" value=""> <label for="q3a4">We didn't go to space.</label><br>
+
+      <p>As of october 9th, 2015, how many visitors did has the ISS had?</p>
+      <input type="radio" name="q4a1" value=""> <label for="q4a1">219.</label><br>
+      <input type="radio" name="q4a2" value=""> <label for="q4a2">221.</label><br>
+      <input type="radio" name="q4a3" value=""> <label for="q4a3">220.</label><br>
+      <input type="radio" name="q4a4" value=""> <label for="q4a4">We didn't go to space.</label><br>
+
+      <p>What space ship travels/ed the fastest?</p>
+      <input type="radio" name="q5a1" value=""> <label for="q5a1">International Space Station.</label><br>
+      <input type="radio" name="q5a2" value=""> <label for="q5a2">Mir.</label><br>
+      <input type="radio" name="q5a3" value=""> <label for="q5a3">Skylab.</label><br>
+      <input type="radio" name="q5a4" value=""> <label for="q5a4">Sputnik 1.</label><br>
+
+
+      <br><br><br><button type="submit" name="submitQuiz">Submit Quiz.</button>
+
+    </form>
+
+    <p style="font-size:14px"><i><b>Copyright © 2019. Paid for by the Globalists®. All rights reserved.</i></b></p>
+    <p style="font-size:12px">Your computer info is leaking. You might want to call a plumber.</p>
+    <p style="font-size:12px">IP Address: <?php echo $PublicIP; ?> </p>
+    <p style="font-size:12px">Location: <?php echo "$loc"; ?> </p>
+
+  </body>
+</html>

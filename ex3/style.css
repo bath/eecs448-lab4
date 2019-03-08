@@ -1,0 +1,63 @@
+*
+{
+  font-family:'system-ui';
+}
+
+#mainTitle
+{
+  font-size:30px;
+  font-weight:bold;
+}
+
+#subTitle
+{
+  position:relative;
+  top:-25px;
+}
+
+.title
+{
+  position:relative;
+  left:20px;
+}
+
+.usernameEmail
+{
+  width:200px;
+}
+
+.usernameEmail input
+{
+  width:100%;
+  border-style:groove;
+  border-color: #4286f4;
+  border-width:5px;
+}
+
+.buttonArea
+{
+  position:relative;
+  padding-top:10px;
+  padding-bottom: 20px;
+}
+
+#field1,#field2,#field3
+{
+  width:35px;
+}
+
+.dd
+{
+  color:purple;
+  background-color: green;
+}
+
+table
+{
+  border-width:11px;
+}
+
+#total
+{
+  width
+}
